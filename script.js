@@ -23,7 +23,7 @@ const animate = (from, to) => {
             clearInterval(anim);
             anim = null;
             nav.style.setProperty('--translate-y', '0px');
-            nav.style.setProperty('--rotate-x', '0deg')
+            nav.style.setProperty('--rotate-x', '0deg');
         }
     });
 }
