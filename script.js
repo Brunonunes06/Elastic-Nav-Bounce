@@ -18,12 +18,20 @@ const animate = (from, to) => {
         nav.style.setProperty('--translate-x', `${x}px`);
         nav.style.setProperty('--translate-y', `${y}px`);
         nav.style.setProperty('--rotate-x', `${r}deg`);
-        
+
         if (p >= 1) {
             clearInterval(anim);
             anim = null;
             nav.style.setProperty('--translate-y', '0px');
             nav.style.setProperty('--rotate-x', '0deg');
+
+            if (p >= 1){
+                clearInterval(anim);
+                anim = null;
+            nav.style.setProperty('--translate-y', '0px');
+            nav.style.setProperty('--rotate-x', '0deg');
         }
-    });
-}
+    }, 16);
+};
+
+const getCurrentPosition = () => parseFloat(nav.style.getPropertyValeu('--translate-x')) || 0;
