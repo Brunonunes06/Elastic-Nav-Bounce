@@ -3,73 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>Bolo Cortado</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f3f3f3;
+        }
+
+        .bolo {
+            position: relative;
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            background-color: #f8d7b2;
+            border: 5px solid #8c5ed3c;
+        }
+
+        .corte {
+            position: absolute;
+            width: 5px;
+            background-color: #4a4a4a;
+            top: 0;
+            left: 50%;
+            transform-origin: center;
+        }
+
+        .corte1 {
+            transform: rotate(0deg);
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <nav>
-            <li>
-                <a href="#sectio1">home</a>
-            </li>
-            <li>
-                <a href="#section2">About</a>
-            </li>
-            <li>
-                <a href="#section3">Services</a>
-            </li>
-            <li>
-                <a href="#section4">Contact</a>
-            </li>
-        </nav>
-    </header>
-    <section class="container" id="section1"> 
-        <img src="https://lh7-us.googleusercontent.com/UVEdb5ZmtZi7rwX6kMOfAP7CJQfckceyqHhH03R-2G8gOQ8koagkVVqkoxdJBAUH90A8GU9VcITnh7cd8j-XCGlunfTcjkw9lyM2Fh1TZ4H9qMHI__DHwewovUdn3gPFT_Vdag2RurL_-Ebr0D9Lhes" alt="">
-    </section>
-    <section class="container" id="section2">
-        <img src="https://mundophp.com.br/wp-content/uploads/2024/05/Introducao-ao-Desenvolvimento-Web-768x512.jpg" alt="">
-    </section>
-    <section class="container" id="section3">
-        <img src="https://media.licdn.com/dms/image/v2/C4D12AQGxEw94fq4GHg/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1543755526409?e=2147483647&v=beta&t=zDQIxPbmreq5Ru1K82680oyWuEi8gMx9tGDoWFwRO9Y" alt="">
-    </section>
-    <section class="container" id="section4">
-        <img src="https://idocode.com.br/wp-content/uploads/2021/08/Linguagens-de-programacao-quais-as-melhores-empresas-usam--768x512.jpg.webp" alt="">
-    </section>
-
-    <svg style="display: none;">
-        <defs>
-            <filter id="wave-distort" x="0%" y="0%" width="100%" height="100%">
-                <feTurbulence
-                    type="fractaNoise"
-                    baseFrequency="0.0038 0.0038"
-                    seed="2"
-                    result="rounghNoise"
-                    />
-                <feGaussianBlur 
-                    in="rounghNoise" 
-                    stdDeviation="8.5" 
-                    result="softNoise" 
-                />
-                <feComposite 
-                    operator="arithmetic"
-                    k1="0"
-                    k2="1"
-                    k3="2"
-                    k4="0"
-                    in="softNoise"
-                    result="mergedMap"
-                />
-            <feDisplacementMap
-                in="SourceGraphic"
-                in2="mergedMap"
-                scale="-42"
-                xChannelSelector="G"
-                yChannelSelector="G"
-            />
-            </filter>
-        </defs>
-    </svg>
-
-<script src="script.js"></script>
+    
 </body>
 </html>
